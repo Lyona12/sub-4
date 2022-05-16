@@ -43,7 +43,7 @@ class Bot(Client):
                 self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
                 self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL2 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL2}")
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/pantekyks for support")
-       if FORCE_SUB_CHANNEL3:
+        if FORCE_SUB_CHANNEL3:
             try:
                 link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL1)
                 self.invitelink1 = link
@@ -53,7 +53,7 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL1 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL3}")
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/pantekyks for support")
                 sys.exit()
-      if FORCE_SUB_CHANNEL4:
+       if FORCE_SUB_CHANNEL4:
             try:
                 link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL2)
                 self.invitelink2 = link
