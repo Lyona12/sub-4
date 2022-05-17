@@ -1,4 +1,5 @@
 #(©)Codexbotz
+#(©)cioyourfvboynih
 
 import pyromod.listen
 from pyrogram import Client
@@ -45,7 +46,7 @@ class Bot(Client):
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/whycio for support")
         if FORCE_SUB_CHANNEL3:
             try:
-                link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL1)
+                link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL3)
                 self.invitelink3 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
@@ -55,7 +56,7 @@ class Bot(Client):
                 sys.exit()
        if FORCE_SUB_CHANNEL4:
             try:
-                link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL2)
+                link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL4)
                 self.invitelink4 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
